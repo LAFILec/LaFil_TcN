@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fil - Trabaja con Nosotros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <meta name="description" content="La Fil - Portal mágico de oportunidades. Únete a nosotros y exhibe tus creaciones en un espacio único.">
+    <meta name="keywords" content="La Fil, trabajo, creatividad, productos, colaboración, marca">
+</head>
+<body>
+    <!-- Header Mágico -->
+    <header>
+        <nav>
+            <a href="https://newsite04.github.io/LAFILec/" class="logo">LA FIL</a>
+            <ul class="nav-menu">
+                <li><a href="https://www.youtube.com/watch?v=Ph44oJ7WpGU&ab_channel=OlaGjeiloVEVO" class="social-button" target="_blank" rel="noopener">💰 Crowdfunding</a></li>
+                <li><a href="https://instagram.com/lafil.ec?igsh=MTc1MzY4MjdsYXZhYg==" class="social-button" target="_blank" rel="noopener">📸 Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Fondo mágico con efectos animados -->
+    <div class="magical-background">
+        <canvas id="starsCanvas" aria-hidden="true"></canvas>
+        <div class="floating-particles" aria-hidden="true"></div>
+    </div>
+
+
+    <!-- Contenido principal -->
+    <main class="content-container">
+        <article class="magical-card" role="main">
+            <div class="card-content">
+                <h2 class="section-title">
+                    <div class="magic-ornament left-ornament" aria-hidden="true"></div>
+                    <span class="typewriter-text">Trabaja con Nosotros</span>
+                    <div class="magic-ornament right-ornament" aria-hidden="true"></div>
+                </h2>
+                
+                <div class="message-content">
+                    <p class="intro-text">
+                        En <em>La Fil</em> abrimos las puertas a creadores, marcas y mentes innovadoras. 
+                        Si tienes un producto con esencia propia y quieres que el mundo lo conozca, 
+                        este espacio puede ser tu vitrina.
+                    </p>
+                    
+                    <p class="description-text">
+                        Tú creas, nosotros exhibimos y vendemos. Por cada venta, una parte se queda 
+                        en La Fil como comisión justa por visibilidad, gestión y presencia. 
+                        Sin complicaciones ni contratos extensos, solo una alianza clara, 
+                        creativa y beneficiosa.
+                    </p>
+                    
+                    <div class="call-to-action">
+                        <p class="action-text">
+                            Envía tu propuesta a 
+                            <a href="mailto:info@lafil.com" class="magical-email" title="Contactar con La Fil">info@lafil.com</a> 
+                            y comienza a formar parte de algo que ya está marcando la diferencia.
+                        </p>
+                    </div>
+
+                    <!-- Sección adicional de beneficios -->
+                    <div class="benefits-section">
+                        <h3 class="benefits-title">¿Qué ofrecemos?</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">✨</div>
+                                <h4>Visibilidad</h4>
+                                <p>Exposición en nuestra plataforma mágica</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🤝</div>
+                                <h4>Colaboración</h4>
+                                <p>Alianza justa y transparente</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🎯</div>
+                                <h4>Gestión</h4>
+                                <p>Nos encargamos de la venta y promoción</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="magical-seal">
+                    <div class="seal-inner">
+                        <span class="seal-text">Sello de Autenticidad Mágica</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elementos encantados flotantes -->
+            <div class="enchanted-elements" aria-hidden="true">
+                <div class="floating-leaf leaf-1"></div>
+                <div class="floating-leaf leaf-2"></div>
+                <div class="floating-leaf leaf-3"></div>
+                <div class="magical-sparkle sparkle-1"></div>
+                <div class="magical-sparkle sparkle-2"></div>
+                <div class="magical-sparkle sparkle-3"></div>
+            </div>
+        </article>
+
+        <!-- Formulario de contacto mágico -->
+        <section class="contact-form-section" id="contacto">
+            <div class="magical-card">
+                <div class="card-content">
+                    <h2 class="section-title">
+                        <div class="magic-ornament" aria-hidden="true"></div>
+                        Envía tu Propuesta
+                        <div class="magic-ornament" aria-hidden="true"></div>
+                    </h2>
+                    
+                    <form class="magical-form" id="contactForm" action="mailto:info@lafil.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre o Marca</label>
+                            <input type="text" id="nombre" name="nombre" class="magical-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="magical-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="producto" class="form-label">Tipo de Producto</label>
+                            <select id="producto" name="producto" class="magical-select" required>
+                                <option value="">Selecciona una categoría</option>
+                                <option value="arte">Arte y Diseño</option>
+                                <option value="tecnologia">Tecnología</option>
+                                <option value="moda">Moda y Accesorios</option>
+                                <option value="hogar">Hogar y Decoración</option>
+                                <option value="gastronomia">Gastronomía</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="descripcion" class="form-label">Describe tu propuesta</label>
+                            <textarea id="descripcion" name="descripcion" class="magical-textarea" rows="5" required placeholder="Cuéntanos sobre tu producto, tu marca y tu visión..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="magical-submit-btn">
+                            <span class="btn-text">Enviar Propuesta</span>
+                            <span class="btn-magic" aria-hidden="true">✨</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer mágico -->
+    <footer class="magical-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 La Fil. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Elementos interactivos de cursor -->
+    <div id="cursorTrail" class="cursor-trail" aria-hidden="true"></div>
+    <div id="clickParticles" class="click-particles" aria-hidden="true"></div>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
