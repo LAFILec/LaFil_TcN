@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Fil - Portal Mágico de Oportunidades</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    
     <meta name="description" content="La Fil - Portal mágico donde los creadores encuentran su lugar. Únete a nosotros y transforma tus productos en experiencias extraordinarias.">
     <meta name="keywords" content="La Fil, creatividad, productos únicos, marketplace mágico, colaboración, emprendedores, Ecuador">
     <meta name="author" content="La Fil">
@@ -15,65 +12,21 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
     <meta name="theme-color" content="#9b59b6">
-    
-    <style>
-        body { 
-            margin: 0; 
-            font-family: 'EB Garamond', serif; 
-            background: #0a0e1a; 
-            overflow-x: hidden; 
-        }
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #0a0e1a 0%, #1a1a2e 50%, #16213e 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10000;
-            transition: opacity 0.8s ease, visibility 0.8s ease;
-        }
-        .loading-screen.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-.magical-select {
-    color: #000; 
-    background-color: #fff; 
-}
-
-.magical-select option {
-    color: #000; 
-    background-color: #fff; 
-}
-
-.magical-select option:hover {
-    background-color: #f0f0f0; 
-}
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="loading-screen" id="loadingScreen">
         <div class="magical-loader">
             <div class="golden-snitch">
                 <div class="snitch-body"></div>
-                <div class="snitch-wings">
-                    <div class="wing wing-left"></div>
-                    <div class="wing wing-right"></div>
-                </div>
             </div>
-            <p class="loading-text">Preparando espacio magico...</p>
+            <p class="loading-text">Preparando la magia...</p>
         </div>
     </div>
 
@@ -81,27 +34,20 @@
         <nav class="nav-container">
             <a href="https://lafilec.github.io/LAFILec/" class="logo magical-logo">
                 <span class="logo-text">LA FIL</span>
-                <div class="logo-sparkles">
-                    <span class="sparkle"></span>
-                    <span class="sparkle"></span>
-                    <span class="sparkle"></span>
-                </div>
             </a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="https://lafilec.github.io/LAFILec/" class="nav-link" rel="noopener">
                     <span class="nav-icon">🏰</span>
                     <span>Retornar</span>
                 </a></li>
-                <li><a href="https://www.youtube.com/watch?v=Ph44oJ7WpGU&ab_channel=OlaGjeiloVEVO" class="nav-link crowdfunding-link" target="_blank" rel="noopener">
-                    <span class="nav-icon">💰</span>
+                <li><a href="https://lafilec.github.io/crowdfunding/" class="nav-link crowdfunding-link" target="_blank" rel="noopener">
                     <span>Crowdfunding</span>
                 </a></li>
                 <li><a href="https://instagram.com/lafil.ec?igsh=MTc1MzY4MjdsYXZhYg==" class="nav-link instagram-link" target="_blank" rel="noopener">
-                    <span class="nav-icon">📸</span>
                     <span>Instagram</span>
                 </a></li>
             </ul>
-            <button class="mobile-menu-toggle" aria-label="Abrir menú">
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -111,18 +57,6 @@
 
     <div class="magical-background">
         <canvas id="starsCanvas" aria-hidden="true"></canvas>
-        <div class="floating-particles" aria-hidden="true">
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
-            <div class="particle particle-5"></div>
-        </div>
-        <div class="hogwarts-castle" aria-hidden="true"></div>
-        <div class="floating-letters" aria-hidden="true">
-            <span class="letter">✉</span>
-            <span class="letter">🦉</span>
-        </div>
     </div>
 
     <main class="content-container">
@@ -130,13 +64,11 @@
             <div class="magical-card hero-card" role="main">
                 <div class="card-content">
                     <h1 class="hero-title">
-                        <div class="magic-ornament left-ornament" aria-hidden="true">⚡</div>
                         <span class="typewriter-text">Trabaja con Nosotros</span>
-                        <div class="magic-ornament right-ornament" aria-hidden="true">⚡</div>
                     </h1>
                     
                     <div class="hero-subtitle">
-                        <p class="subtitle-text">Donde la creatividad encuentra su destino mágico y especial</p>
+                        <p class="subtitle-text">Donde la creatividad encuentra su destino mágico</p>
                     </div>
                     
                     <div class="message-content">
@@ -144,8 +76,8 @@
                             <p class="intro-text">
                                 En <em class="brand-highlight">La Fil</em> abrimos las puertas de nuestro mundo mágico 
                                 a creadores extraordinarios, marcas visionarias y mentes que osan soñar. 
-                                Si posees un producto con alma propia y deseas que se conozca  
-                                su potencial, llegaste al sitio correcto.
+                                Si posees un producto con alma propia y deseas que el universo entero 
+                                conozca su poder, este es tu caldero dorado.
                             </p>
                         </div>
                         
@@ -153,10 +85,10 @@
                             <div class="magic-quote">
                                 <div class="quote-symbol">"</div>
                                 <p class="description-text">
-                                    Tú proporcionas el producto, nosotros la compartimos con el mundo. 
-                                    Por cada producto vendido, una porción justa se queda en La Fil 
-                                    como parte de la visibilidad, gestión y presencia en nuestro mundo. 
-                                    Sin complicaciones, ni contratos eternos, solo una alianza 
+                                    Tú creas la magia, nosotros la compartimos con el mundo. 
+                                    Por cada encantamiento vendido, una porción justa se queda en La Fil 
+                                    como tributo por la visibilidad, gestión y presencia en nuestro reino. 
+                                    Sin pergaminos complicados ni contratos eternos, solo una alianza 
                                     clara, mágica y próspera.
                                 </p>
                                 <div class="quote-symbol">"</div>
@@ -168,9 +100,7 @@
                                 <p class="action-text">
                                     Envía tu propuesta por lechuza digital a 
                                     <a href="mailto:lafilec01@gmail.com" class="magical-email" title="Contactar con La Fil">
-                                        <span class="email-icon">📧</span>
                                         lafilec01@gmail.com
-                                        <span class="email-sparkle">✨</span>
                                     </a> 
                                     y comienza tu aventura en algo verdaderamente extraordinario.
                                 </p>
@@ -178,35 +108,22 @@
                         </div>
 
                         <div class="benefits-section">
-                            <h2 class="benefits-title">
-                                <span class="title-icon">🌟</span>
-                                Los que Ofrecemos
-                                <span class="title-icon">🌟</span>
-                            </h2>
                             <div class="benefits-grid">
                                 <div class="benefit-item house-gryffindor">
-                                    <div class="benefit-icon">🔮</div>
                                     <h3>Visibilidad</h3>
-                                    <p>Tu creación brillará en nuestro portal web, visible para todos por igual</p>
-                                    <div class="benefit-sparkles"></div>
+                                    <p>Tu creación brillará en nuestro portal encantado, visible para magos y muggles por igual</p>
                                 </div>
                                 <div class="benefit-item house-hufflepuff">
-                                    <div class="benefit-icon">🤝</div>
                                     <h3>Alianza Leal</h3>
-                                    <p>Colaboración transparente y justa, como las mejores alianzas.</p>
-                                    <div class="benefit-sparkles"></div>
+                                    <p>Colaboración transparente y justa, como los mejores pactos del mundo mágico</p>
                                 </div>
                                 <div class="benefit-item house-ravenclaw">
-                                    <div class="benefit-icon">🎯</div>
                                     <h3>Gestión Sabia</h3>
                                     <p>Nosotros nos encargamos de la promoción y ventas mientras tú sigues creando</p>
-                                    <div class="benefit-sparkles"></div>
                                 </div>
                                 <div class="benefit-item house-slytherin">
-                                    <div class="benefit-icon">📈</div>
                                     <h3>Crecimiento Ambicioso</h3>
-                                    <p>Estrategias que impulsan tu marca hacia el éxito</p>
-                                    <div class="benefit-sparkles"></div>
+                                    <p>Estrategias que impulsan tu marca hacia el éxito en el mundo mágico y muggle</p>
                                 </div>
                             </div>
                         </div>
@@ -214,192 +131,22 @@
                     
                     <div class="magical-seal">
                         <div class="seal-inner">
-                            <div class="seal-symbol">⚡</div>
                             <span class="seal-text">Sello de Autenticidad Mágica</span>
-                            <div class="seal-glow"></div>
                         </div>
                     </div>
-                </div>
-
-                <div class="enchanted-elements" aria-hidden="true">
-                    <div class="floating-element wand"></div>
-                    <div class="floating-element crystal crystal-1"></div>
-                    <div class="floating-element crystal crystal-2"></div>
-                    <div class="floating-element potion-bottle"></div>
-                    <div class="magical-aura aura-1"></div>
-                    <div class="magical-aura aura-2"></div>
-                    <div class="magical-aura aura-3"></div>
                 </div>
             </div>
         </section>
+    </main>
 
-        <section class="contact-form-section" id="contacto">
-            <div class="magical-card form-card">
-                <div class="card-content">
-                    <h2 class="section-title form-title">
-                        <div class="magic-ornament" aria-hidden="true"></div>
-                        <span>Envía tu Propuesta Mágica</span>
-                        <div class="magic-ornament" aria-hidden="true">🪶</div>
-                    </h2>
-                    
-                    <div class="form-intro">
-                        <p>Completa esta ventana y permítenos conocer tu extraordinaria creación</p>
-                    </div>
-                    
-                    <form class="magical-form" id="contactForm" novalidate>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nombre" class="form-label">
-                                    <span class="label-icon">🧙‍♂️</span>
-                                    Nombre o Marca
-                                    <span class="required-star">*</span>
-                                </label>
-                                <input type="text" id="nombre" name="nombre" class="magical-input" required 
-                                       placeholder="Ej: Varitas Ollivander" 
-                                       aria-describedby="nombre-help">
-                                <div class="field-help" id="nombre-help">¿Cómo te conoce el mundo?</div>
-                                <div class="field-error" id="nombre-error"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email" class="form-label">
-                                    <span class="label-icon">🦉</span>
-                                    Lechuza Digital
-                                    <span class="required-star">*</span>
-                                </label>
-                                <input type="email" id="email" name="email" class="magical-input" required 
-                                       placeholder="lafilec01@gmail.com"
-                                       aria-describedby="email-help">
-                                <div class="field-help" id="email-help">Tu medio de comunicación preferido</div>
-                                <div class="field-error" id="email-error"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="telefono" class="form-label">
-                                    <span class="label-icon">📞</span>
-                                    Teléfono
-                                </label>
-                                <input type="tel" id="telefono" name="telefono" class="magical-input" 
-                                       placeholder="+593 991389252"
-                                       aria-describedby="telefono-help">
-                                <div class="field-help" id="telefono-help">Para comunicación directa</div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="producto" class="form-label">
-                                    <span class="label-icon">🏷️</span>
-                                    Categoría
-                                    <span class="required-star">*</span>
-                                </label>
-                                <select id="producto" name="producto" class="magical-select" required 
-                                        aria-describedby="producto-help">
-                                    <option value="">Selecciona tu especialidad</option>
-                                    <option value="arte-magico">🎨 Arte y Diseño</option>
-                                    <option value="tecnologia-encantada">⚡ Tecnología</option>
-                                    <option value="moda-hechizada">👗 Moda y Accesorios</option>
-                                    <option value="hogar-encantado">🏠 Hogar y Decoración</option>
-                                    <option value="gastronomia-magica">🍽️ Gastronomía Mágica</option>
-                                    <option value="joyeria-encantada">💍 Joyería</option>
-                                    <option value="libros-pergaminos">📚 Libros</option>
-                                    <option value="otro-hechizo">🌟 Otros</option>
-                                </select>
-                                <div class="field-help" id="producto-help">¿Qué tipo de producto creas?</div>
-                                <div class="field-error" id="producto-error"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group full-width">
-                            <label for="descripcion" class="form-label">
-                                <span class="label-icon">📝</span>
-                                Describe tu escencia
-                                <span class="required-star">*</span>
-                            </label>
-                            <textarea id="descripcion" name="descripcion" class="magical-textarea" rows="6" required 
-                                      placeholder="Cuéntanos la historia de tu creación: ¿Qué la hace especial? ¿Cuál es tu visión? Sé tan detallado como desees..."
-                                      aria-describedby="descripcion-help"></textarea>
-                            <div class="field-help" id="descripcion-help">Comparte las caracteristicas de tu producto (mínimo 50 caracteres)</div>
-                            <div class="char-counter">
-                                <span id="char-count">0</span>/2000 caracteres
-                            </div>
-                            <div class="field-error" id="descripcion-error"></div>
-                        </div>
-                        
-                        
-                        <div class="form-actions">
-                            <button type="submit" class="magical-submit-btn">
-                                <span class="btn-content">
-                                    <span class="btn-icon">🚀</span>
-                                    <span class="btn-text">Enviar Propuesta</span>
-                                    <span class="btn-magic" aria-hidden="true">✨</span>
-                                </span>
-                                <div class="btn-loading" style="display: none;">
-                                    <span class="loading-spinner"></span>
-                                    <span>Enviando mensaje...</span>
-                                </div>
-                            </button>
-                        </div>
-                    </form>
-
-                    <div class="success-message" id="successMessage" style="display: none;">
-                        <div class="success-content">
-                            <div class="success-icon">🎉</div>
-                            <h3>¡Propuesta Enviada con Éxito!</h3>
-                            <p>Tu mensajeha sido enviado. Nuestros amigos lo revisarán y te contactarán pronto.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-decorations" aria-hidden="true">
-                    <div class="floating-quill"></div>
-                    <div class="magical-ink"></div>
-                    <div class="parchment-corner"></div>
-                </div>
+    <footer class="magical-footer">
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Fil. Todos los derechos reservados.</p>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <footer class="magical-footer">
-            <div class="footer-content">
-                <div class="footer-bottom">
-                    <p>&copy; 2025 La Fil. Todos los derechos reservados.</p>
-                </div>
-            </div>
-            
-            <div class="footer-decorations" aria-hidden="true">
-                <div class="footer-star"></div>
-                <div class="footer-moon"></div>
-            </div>
-        </footer>
-
-    <div id="cursorTrail" class="cursor-trail" aria-hidden="true"></div>
-    <div id="clickParticles" class="click-particles" aria-hidden="true"></div>
-    <div class="scroll-indicator" aria-hidden="true">
-        <div class="scroll-progress"></div>
-    </div>
-
-    <script>
-        window.addEventListener('load', () => {
-            const loadingScreen = document.getElementById('loadingScreen');
-            if (loadingScreen) {
-                setTimeout(() => {
-                    loadingScreen.classList.add('hidden');
-                }, 1000);
-            }
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (mobileToggle && navMenu) {
-                mobileToggle.addEventListener('click', () => {
-                    navMenu.classList.toggle('active');
-                    mobileToggle.classList.toggle('active');
-                });
-            }
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
