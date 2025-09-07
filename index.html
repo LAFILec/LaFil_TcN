@@ -9,16 +9,39 @@
     <meta name="author" content="La Fil">
     <meta property="og:title" content="La Fil - Portal Mágico de Oportunidades">
     <meta property="og:description" content="Donde la creatividad cobra vida. Únete a nuestra comunidad mágica de creadores.">
+    <meta property="og:image" content="lafil.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="lafil.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="lafil.png">
+    <link rel="shortcut icon" type="image/png" href="lafil.png">
+    <link rel="apple-touch-icon" href="lafil.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="lafil.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="lafil.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="lafil.png">
     <meta name="theme-color" content="#9b59b6">
     <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "La Fil",
+        "description": "Portal mágico donde los creadores encuentran su lugar",
+        "url": "https://lafilec.github.io/LAFILec/",
+        "logo": "lafil.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "lafilec01@gmail.com",
+            "contactType": "business collaboration"
+        }
+    }
+    </script>
 </head>
 <body>
     <div class="loading-screen" id="loadingScreen">
@@ -30,24 +53,24 @@
         </div>
     </div>
 
-    <header class="magical-header">
-        <nav class="nav-container">
-            <a href="https://lafilec.github.io/LAFILec/" class="logo magical-logo">
-                <span class="logo-text">LA FIL</span>
+    <header class="magical-header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Navegación principal">
+            <a href="https://lafilec.github.io/LAFILec/" class="logo magical-logo" aria-label="La Fil - Inicio">
+                <img src="lafil.png" alt="La Fil" class="logo-image">
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="https://lafilec.github.io/LAFILec/" class="nav-link" rel="noopener">
-                    <span class="nav-icon">🏰</span>
+                <li><a href="https://lafilec.github.io/LAFILec/" class="nav-link" rel="noopener" aria-label="Retornar al inicio">
+                    <span class="nav-icon" aria-hidden="true">🏰</span>
                     <span>Retornar</span>
                 </a></li>
-                <li><a href="https://lafilec.github.io/crowdfunding/" class="nav-link crowdfunding-link" target="_blank" rel="noopener">
+                <li><a href="https://lafilec.github.io/crowdfunding/" class="nav-link crowdfunding-link" target="_blank" rel="noopener" aria-label="Ver página de Crowdfunding">
                     <span>Crowdfunding</span>
                 </a></li>
-                <li><a href="https://instagram.com/lafil.ec?igsh=MTc1MzY4MjdsYXZhYg==" class="nav-link instagram-link" target="_blank" rel="noopener">
+                <li><a href="https://instagram.com/lafil.ec?igsh=MTc1MzY4MjdsYXZhYg==" class="nav-link instagram-link" target="_blank" rel="noopener" aria-label="Visitar Instagram de La Fil">
                     <span>Instagram</span>
                 </a></li>
             </ul>
-            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Abrir menú">
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -55,13 +78,13 @@
         </nav>
     </header>
 
-    <div class="magical-background">
-        <canvas id="starsCanvas" aria-hidden="true"></canvas>
+    <div class="magical-background" aria-hidden="true">
+        <canvas id="starsCanvas"></canvas>
     </div>
 
-    <main class="content-container">
-        <section class="hero-section">
-            <div class="magical-card hero-card" role="main">
+    <main class="content-container" id="main-content">
+        <section class="hero-section" role="main">
+            <div class="magical-card hero-card">
                 <div class="card-content">
                     <h1 class="hero-title">
                         <span class="typewriter-text">Trabaja con Nosotros</span>
@@ -69,6 +92,16 @@
                     
                     <div class="hero-subtitle">
                         <p class="subtitle-text">Donde la creatividad encuentra su destino mágico</p>
+                    </div>
+
+                    <div class="cta-primary">
+                        <div class="cta-highlight">
+                            <h2 class="cta-title">¿Tienes un producto extraordinario?</h2>
+                            <p class="cta-description">Te ayudamos a llevarlo al mundo entero con nuestra plataforma mágica</p>
+                            <a href="mailto:lafilec01@gmail.com?subject=Propuesta%20de%20Colaboración%20-%20La%20Fil&body=Hola%20La%20Fil,%0A%0AMe%20interesa%20colaborar%20con%20ustedes.%0A%0AProducto/Servicio:%0ADescripción:%0AContacto:%0A%0AGracias!" class="magical-email-primary" title="Enviar propuesta de colaboración">
+                                Enviar Propuesta Mágica
+                            </a>
+                        </div>
                     </div>
                     
                     <div class="message-content">
@@ -81,50 +114,59 @@
                             </p>
                         </div>
                         
-                        <div class="description-section">
-                            <div class="magic-quote">
-                                <div class="quote-symbol">"</div>
-                                <p class="description-text">
-                                    Tú creas la magia, nosotros la compartimos con el mundo. 
-                                    Por cada encantamiento vendido, una porción justa se queda en La Fil 
-                                    como tributo por la visibilidad, gestión y presencia en nuestro reino. 
-                                    Sin pergaminos complicados ni contratos eternos, solo una alianza 
-                                    clara, mágica y próspera.
-                                </p>
-                                <div class="quote-symbol">"</div>
+                        <div class="value-proposition">
+                            <div class="value-item">
+                                <div class="value-icon">🎯</div>
+                                <h3>Modelo Simple y Justo</h3>
+                                <p>Tú creas, nosotros vendemos. Por cada producto vendido, tomamos una comisión justa por la gestión y visibilidad.</p>
                             </div>
-                        </div>
-                        
-                        <div class="call-to-action-section">
-                            <div class="magical-scroll">
-                                <p class="action-text">
-                                    Envía tu propuesta por lechuza digital a 
-                                    <a href="mailto:lafilec01@gmail.com" class="magical-email" title="Contactar con La Fil">
-                                        lafilec01@gmail.com
-                                    </a> 
-                                    y comienza tu aventura en algo verdaderamente extraordinario.
-                                </p>
+                            <div class="value-item">
+                                <div class="value-icon">📈</div>
+                                <h3>Sin Costos Iniciales</h3>
+                                <p>No pagas nada por adelantado. Solo ganamos cuando tú ganas. Alianza transparente y sin riesgos.</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">🌟</div>
+                                <h3>Visibilidad Garantizada</h3>
+                                <p>Tu producto brillará en nuestro portal mágico, con promoción activa en redes sociales y campañas dirigidas.</p>
                             </div>
                         </div>
 
                         <div class="benefits-section">
+                            <h2 class="benefits-title">¿Por qué elegir La Fil?</h2>
                             <div class="benefits-grid">
                                 <div class="benefit-item house-gryffindor">
-                                    <h3>Visibilidad</h3>
+                                    <div class="benefit-icon">🏆</div>
+                                    <h3>Visibilidad Máxima</h3>
                                     <p>Tu creación brillará en nuestro portal encantado, visible para magos y muggles por igual</p>
                                 </div>
                                 <div class="benefit-item house-hufflepuff">
+                                    <div class="benefit-icon">🤝</div>
                                     <h3>Alianza Leal</h3>
                                     <p>Colaboración transparente y justa, como los mejores pactos del mundo mágico</p>
                                 </div>
                                 <div class="benefit-item house-ravenclaw">
+                                    <div class="benefit-icon">🧠</div>
                                     <h3>Gestión Sabia</h3>
                                     <p>Nosotros nos encargamos de la promoción y ventas mientras tú sigues creando</p>
                                 </div>
                                 <div class="benefit-item house-slytherin">
+                                    <div class="benefit-icon">🚀</div>
                                     <h3>Crecimiento Ambicioso</h3>
                                     <p>Estrategias que impulsan tu marca hacia el éxito en el mundo mágico y muggle</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="final-cta">
+                            <div class="magical-scroll">
+                                <h2 class="final-cta-title">¡Comienza tu aventura mágica hoy!</h2>
+                                <p class="action-text">
+                                    Envía tu propuesta por lechuza digital y descubre cómo podemos hacer crecer tu negocio juntos.
+                                </p>
+                                <a href="mailto:lafilec01@gmail.com?subject=Propuesta%20de%20Colaboración%20-%20La%20Fil&body=Hola%20La%20Fil,%0A%0AMe%20interesa%20colaborar%20con%20ustedes.%0A%0AProducto/Servicio:%0ADescripción:%0AContacto:%0A%0AGracias!" class="magical-email" title="Contactar con La Fil">
+                                    lafilec01@gmail.com
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -139,10 +181,11 @@
         </section>
     </main>
 
-    <footer class="magical-footer">
+    <footer class="magical-footer" role="contentinfo">
         <div class="footer-content">
-            <div class="footer-bottom">
+            <div class="footer-info">
                 <p>&copy; 2025 La Fil. Todos los derechos reservados.</p>
+                <p>Transformando creatividad en oportunidades mágicas</p>
             </div>
         </div>
     </footer>
